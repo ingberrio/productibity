@@ -3,12 +3,22 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: rgb(0, 0, 0);
+    margin-bottom: 40px;
   }
   
 header {
     background-color: rgb(0, 0, 0);
     padding: 20px;
   }
+
+footer {
+  background-color: black;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  color: rgb(4, 4, 4);
+  background-color: rgba(0, 0, 0, 0.2);
+}
 
 button{
   color: #000;
@@ -39,7 +49,7 @@ main {
     width: 200px;
     height: 200px;
     margin: 0 auto;
-    border: 10px solid #d5d5d5;
+    border: 10px solid #ffffff;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -70,7 +80,6 @@ main {
   }
   
   .timer-controls {
-    color: #000;
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -78,10 +87,11 @@ main {
   
   .start-btn,
   .reset-btn {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    background-color: rgb(79, 146, 150);
-    color: #fff;
-    border: none;
+    background-color: rgb(254, 255, 255);
+    color: #000000;
+    border: 2px;
+    border: 2px solid rgb(189, 39, 137);
+    border-color: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);;
     padding: 12px 24px;
     font-size: 16px;
     cursor: pointer;
@@ -95,11 +105,12 @@ main {
   
   .start-btn:hover,
   .reset-btn:hover {
-    background-color: rgb(56, 133, 138);
+    background-color: rgb(0, 0, 0);
+    color: #fefefe;
   }
   
   .task-container {
-    margin-top: 40px;
+    margin-top: 10px;
   }
   
   .section-heading {
@@ -121,9 +132,9 @@ main {
   }
   
   .add-task-btn {
-    background-color: rgb(79, 146, 150);
-    color: #fff;
-    border: none;
+    background-color: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    color: #000000;
+    border: 2px solid rgb(118, 31, 200);
     padding: 12px 24px;
     font-size: 16px;
     cursor: pointer;
@@ -136,7 +147,8 @@ main {
   }
   
   .add-task-btn:hover {
-    background-color: rgb(56, 133, 138);
+    background-color: rgb(0, 0, 0);
+    color: #fefefe;
   }
   
   .task-list {
