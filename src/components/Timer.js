@@ -30,11 +30,13 @@ const Timer = () => {
               setTimeRemaining(900); // 15 minutos en segundos
               initialTimeRef.current = 900; // Actualizar el tiempo inicial
               setIntervalType('longBreak');
+              beepSound.play();
             } else {
               // Tomar una pausa corta
               setTimeRemaining(300); // 5 minutos en segundos
               initialTimeRef.current = 300; // Actualizar el tiempo inicial
               setIntervalType('shortBreak');
+              beepSound.play();
             }
           } else {
             // Finalizó un intervalo de pausa
